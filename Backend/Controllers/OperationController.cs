@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Runtime.CompilerServices;
 
 namespace Backend.Controllers
 {
@@ -7,5 +8,13 @@ namespace Backend.Controllers
     [ApiController]
     public class OperationController : ControllerBase
     {
+        [HttpGet]
+        public decimal Add(decimal a, decimal b)
+        {
+            return a + b;
+        }
+        /*
+         p -> api/ -> get =
+         */
     }
 }
